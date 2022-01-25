@@ -41,7 +41,7 @@ export default function SignIn({ setCurrentUser}) {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    fetch('https://e-commerce-project-flatiron.herokuapp.com/login', {
+    fetch('/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ export default function SignIn({ setCurrentUser}) {
         .then(res => res.json())
         .then(x => {
           x.username && setCurrentUser(x)
-          navigate('https://e-commerce-project-flatiron.herokuapp.com/MainPage')
+          navigate('/MainPage')
           // window.location.href="/MainPage"
         })
         }
