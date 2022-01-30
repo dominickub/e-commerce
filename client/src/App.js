@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
 
-    fetch("https://e-commerce-project-flatiron.herokuapp.com/items")
+    fetch("/items")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
@@ -38,7 +38,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch('https://e-commerce-project-flatiron.herokuapp.com/me')
+    fetch('/me')
     .then(res => res.json())
     .then(data=> data.username && setCurrentUser(data) );
     },[])

@@ -1,7 +1,7 @@
 
 class ItemsController < ApplicationController
     before_action :find_item, only: [:destroy,:update,:purchased_item]
-    skip_before_action :authenticate_user, only: [:create,:update,:index,:purchased_item, :destroy,:show]
+    skip_before_action :authenticate_user, only: [:create,:update, :index ,:purchased_item, :destroy,:show]
       def create
           item = Item.create!(items_params)
           render json: item, status: :created
@@ -16,7 +16,7 @@ class ItemsController < ApplicationController
      
       def index 
         item = Item.all
-        render json: item, include: :user
+        render json: item, includes: :user
       end
   
       def update

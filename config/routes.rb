@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :cartlists
   post '/login',to: 'sessions#create'
    patch '/purchase', to: 'items#purchased_item'
-   get '/me ', to: 'users#show'
+   get '/me', to: 'users#show'
    get 'purchasing_stuff', to: 'cartlists#purchasing_stuff'
    delete '/items/item.id', to: 'items#destroy'
    get '/items', to: 'items#index'
