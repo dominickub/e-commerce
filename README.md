@@ -2,8 +2,11 @@
 
 ## Description
 
-This project is scaffolded so that you can build a React frontend and Rails
-backend together, and easily deploy them to Heroku.
+This App was inspired by e-commerce sites such as Ebay or Amazon and allows the user to upload their product onto the platform where other users may add to their cart so that they can purchase in a later time. The App requires you to log in or create a log in so that you may use it. 
+
+We give you the ability to upload or take the item off if you no longer wish to sell the item. Once you have the items in the cart you wont have to worry about counting what the total cost will be because the total is already calculated for you!
+
+We hope you enjoy this simple app!
 
 ## Requirements
 
